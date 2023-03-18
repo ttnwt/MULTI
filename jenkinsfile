@@ -16,8 +16,8 @@ node('master')
                    {
                     sh 'echo "testing has passed"'
                    }
-     stage('Continuous delivery')
-                   {
-                    deploy adapters: [tomcat8(credentialsId: 'prodep', path: '', url: 'http://172.31.95.153:8080')], contextPath: 'catenv', war: '**/*.war'
-                   }
+//     stage('Continuous delivery')
+    //               {
+  //                  deploy adapters: [tomcat8(credentialsId: 'prodep', path: '', url: 'http://172.31.95.153:8080')], contextPath: 'catenv', war: '**/*.war'
+      //             }
 }
